@@ -182,9 +182,33 @@ main{
     position: relative;
 }
 
+/* some facts css */
 
 
-
+.some-facts-box{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    
+}
+.some-box{
+    background: papayawhip;
+    box-shadow: 0px 4px 30px rgba(131, 113, 113, 0.06); 
+    border-radius: 12px;
+    padding: 25px 55px;
+    text-align: center;
+}
+.some-facts-header h1{
+    color: #131313;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.some-facts-header p{
+    color: #727272;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 26px;
+}
 
 
 /* Small device media query */
@@ -223,6 +247,17 @@ main{
     .feature-header-list{
         padding: 20px 20px;
     }
+    /* some facts media query */
+    .some-facts-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        
+        
+    }
+    .some-facts-container{
+        padding: 20px;
+    }
 }
 /* tablet or medium devices media query */
 @media screen and (min-width:576px) and (max-width:960px) {
@@ -243,4 +278,31 @@ main{
         text-align: center;
     }
     /* Features section media query */
+    .feature-section{
+        grid-template-columns: repeat(1,1fr);
+        gap: 3rem;
+        align-items: center;
+        text-align: center;
+        padding: 0px 0px;
+    }
+    .feature-absulute{
+        background-color: #FF900E;
+        padding: 25px 45px;
+        position: absolute;
+        bottom: 20px;
+        right: 250px;
+    }
+    .feature-header-list{
+        padding: 20px 20px;
+    }
+    /* some facts media query */
+    .some-facts-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        
+    }
+    .some-facts-container{
+        padding: 20px;
+    }
 }
