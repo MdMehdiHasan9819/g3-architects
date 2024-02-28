@@ -5,6 +5,22 @@ body{
     font-family: "Merriweather", serif;
     
 }
+/* share css */
+.btn{
+    padding: 0.8rem 1rem;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+
+
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -46,17 +62,7 @@ body{
     font-weight: 700;
     word-wrap: break-word
 }
-.header button{
-    padding: 0.8rem 1rem;
-    background-color: #FF900E;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    word-wrap: break-word;
-    cursor: pointer;
-}
+
 .header p{
 color: #727272;
 font-size: 0.8rem;
@@ -69,6 +75,116 @@ word-wrap: break-word
     padding-top: 50px;
 }
 
+/* main section css */
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+/* quick list section css */
+.quick-list-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    align-items: center;
+    padding: 100px 0px;
+}
+.quick-list-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.quick-list-container>img{
+    width: 100%;
+}
+.quick-list-content>h1{
+    color: #727272;
+    font-size: 2.5rem;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+.our-of{
+    color: #131313;
+    font-size: 2.5rem;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.our-features{
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.quick-list-content>p{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+/* feature-section css */
+.feature-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+    padding: 0px 0px;
+}
+.feature-img>img{
+    width: 100%;
+    height: 100%;
+}
+.feature-div-content{
+    background: white;
+     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06); 
+     border-radius: 12px;
+     padding: 10px 15px;
+     margin: 10px 0px;
+}
+.feature-div-content h1{
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+}
+.feature-div-content p{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.feature-header-list h1{
+    color: #131313;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.feature-header-list p{
+    color: #727272;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.feature-absulute{
+    background-color: #FF900E;
+    padding: 25px 45px;
+    position: absolute;
+    bottom: 100px;
+    right: 330px;
+}
+.feature-section{
+    position: relative;
+}
+
+
+
+
 
 
 /* Small device media query */
@@ -79,6 +195,34 @@ word-wrap: break-word
     .navbar{
         flex-direction: column;
     }
+    /* quick list css */
+    .quick-list-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        padding: 50px 30px;
+        }
+    .quick-list-content{
+        text-align: center;
+    }
+    /* Features section media query */
+    .feature-section{
+        grid-template-columns: repeat(1,1fr);
+        gap: 3rem;
+        align-items: center;
+        text-align: center;
+        padding: 0px 0px;
+    }
+    .feature-absulute{
+        background-color: #FF900E;
+        padding: 25px 45px;
+        position: absolute;
+        bottom: 20px;
+        right: 110px;
+    }
+    .feature-header-list{
+        padding: 20px 20px;
+    }
 }
 /* tablet or medium devices media query */
 @media screen and (min-width:576px) and (max-width:960px) {
@@ -88,4 +232,15 @@ word-wrap: break-word
     .navbar{
         flex-direction: column;
     }
+    /* quick list section media query */
+    .quick-list-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        padding: 50px 30px;
+        }
+    .quick-list-content{
+        text-align: center;
+    }
+    /* Features section media query */
 }
