@@ -8,10 +8,11 @@ body{
 .navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-header{
+#navbar{
     background-color: #FF900E1A;
-    padding: 50px 240px 50px 240px;
+    padding: 30px 220px 30px 220px;
 }
 .navbar >ul{
     display: flex;
@@ -26,4 +27,65 @@ header{
 .navbar li a{
     text-decoration: none;
     color: #424242;
+}
+.nav-title{
+    color: #131313;
+    font-weight: 700;
+    font-size: 3rem;
+    word-wrap: break-word
+}
+/* header title section css */
+.header{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.header>h1{
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
+    word-wrap: break-word
+}
+.header button{
+    padding: 0.8rem 1rem;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+.header p{
+color: #727272;
+font-size: 0.8rem;
+font-weight: 400;
+line-height: 26px;
+word-wrap: break-word
+}
+.header-img img{
+    width: 100%;
+    padding-top: 50px;
+}
+
+
+
+/* Small device media query */
+@media screen and (max-width:576px) {
+    #navbar{
+        padding: 25px 30px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+}
+/* tablet or medium devices media query */
+@media screen and (min-width:576px) and (max-width:960px) {
+    #navbar{
+        padding: 35px 45px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
 }
